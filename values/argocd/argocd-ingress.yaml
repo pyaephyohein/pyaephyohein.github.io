@@ -12,8 +12,8 @@ spec:
   - host: argocd.example.com
     http:
       paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          serviceName: argocd-server
-          servicePort: https
+      - backend:
+          service:
+            name: argocd-server
+            port:
+              number: 443
