@@ -596,11 +596,11 @@ server:
       #       port:
       #         name: use-annotation
     tls:
-      []
-      # - secretName: argocd-tls-certificate
-      #   hosts:
-      #     - argocd.example.com
-    https: false
+      
+      - secretName: argocd-tls-certificate
+        hosts:
+          - argocd.example.com
+    https: true
   # dedicated ingress for gRPC as documented at
   # https://argoproj.github.io/argo-cd/operator-manual/ingress/
   ingressGrpc:
