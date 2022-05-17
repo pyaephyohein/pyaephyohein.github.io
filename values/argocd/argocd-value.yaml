@@ -1126,7 +1126,7 @@ configs:
 
     # Argo expects the password in the secret to be bcrypt hashed. You can create this hash with
     # `htpasswd -nbBC 10 "" $ARGO_PWD | tr -d ':\n' | sed 's/$2y/$2a/'`
-    # argocdServerAdminPassword: ""
+    argocdServerAdminPassword: "$2a$10$dFW.nI0Vz2Ql5rQK7BKHk.ZtuSo7N8Cbol8TU2wZqhZkEoQTrF09a"
     # Password modification time defaults to current time if not set
     # argocdServerAdminPasswordMtime: "2006-01-02T15:04:05Z"
 
