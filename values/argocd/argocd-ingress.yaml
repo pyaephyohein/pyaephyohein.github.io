@@ -13,10 +13,10 @@ status:
       - ip: 127.0.0.1
 spec:
   ingressClassName: public
-    tls:
-      - hosts:
-          - argocd.example.com
-        secretName: argocd-server-tls
+  tls:
+    - hosts:
+        - argocd.example.com
+      secretName: argocd-server-tls
   rules:
   - host: argocd.example.com
     http:
